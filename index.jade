@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+	head
+
+		block variables
+			include config
+
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width")
+
+		include seo
+
+		// build:css
+		// endbuild
+
+		link(rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700")
+
+		// build:js
+		// endbuild
+
+		include favicons
+		script
+			include google-analytics.js
+
+	body
+
+		include frontpage/index
+
+		include overlays
